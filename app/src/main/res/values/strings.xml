@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">chat</string>
+    <string name="welcome_to_main_activity">welcome to main activity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

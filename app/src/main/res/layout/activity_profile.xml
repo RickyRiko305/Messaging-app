@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".ProfileActivity">
+    
+    <ImageView
+        android:id="@+id/profile_visit_user_image"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:src="@drawable/default_profile_image"/>
+
+    <TextView
+        android:id="@+id/profile_visit_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="241dp"
+        android:gravity="center"
+        android:text="Display Username"
+        android:textColor="@android:style/Theme.Black"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/profile_visit_user_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="201dp"
+        android:gravity="center"
+        android:text="Display UserStatus"
+        android:textColor="@android:style/Theme.Black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/profile_visit_send_req_btn"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="82dp"
+        android:background="@color/colorPrimaryDark"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:text="Send Friend Request"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/profile_decline_friend_req_btn"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:background="@color/colorPrimaryDark"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:text="Decline Friend Request"
+        android:textSize="16sp" />
+
+</RelativeLayout>
