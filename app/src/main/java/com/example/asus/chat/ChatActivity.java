@@ -90,7 +90,7 @@ public class ChatActivity extends AppCompatActivity {
         actionBar.setCustomView(action_bar_view);
 
         userNameTitle = (TextView) findViewById(R.id.custom_profile_name);
-        userLastSeen = (TextView) findViewById(R.id.custom_user_last_seen);
+        //userLastSeen = (TextView) findViewById(R.id.custom_user_last_seen);
         userChatProfileImage = (CircleImageView) findViewById(R.id.custom_profile_image);
 
 
@@ -109,6 +109,7 @@ public class ChatActivity extends AppCompatActivity {
         userMessagesList.setLayoutManager(linearLayoutManager);
 
         userMessagesList.setAdapter(messageAdapter);
+
 
         FetchMessages();
 
@@ -142,19 +143,19 @@ public class ChatActivity extends AppCompatActivity {
                             }
                         });
 
-                if(online.equals("true"))
-                {
-                    userLastSeen.setText("Online");
-                }
-                else {
-                    LastSeenTime getTime = new LastSeenTime();
-
-                    long last_seen = Long.parseLong(online);
-
-                    String LastSeenDisplayTime = getTime.getTimeAgo(last_seen, getApplicationContext()).toString();
-
-                    userLastSeen.setText(LastSeenDisplayTime);
-                }
+//                if(online.equals("true"))
+//                {
+//                    userLastSeen.setText("Online");
+//                }
+//                else {
+//                    LastSeenTime getTime = new LastSeenTime();
+//
+//                    long last_seen = Long.parseLong(online);
+//
+//                    String LastSeenDisplayTime = getTime.getTimeAgo(last_seen, getApplicationContext()).toString();
+//
+//                    userLastSeen.setText(LastSeenDisplayTime);
+//                }
             }
 
             @Override
@@ -162,6 +163,7 @@ public class ChatActivity extends AppCompatActivity {
 
             }
         });
+
 
         SendMessageButton.setOnClickListener(new View.OnClickListener() {
             @Override

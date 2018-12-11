@@ -18,14 +18,16 @@
         android:layout_height="459dp"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/chat_bar_layout"
-        android:layout_marginTop="-3dp"></android.support.v7.widget.RecyclerView>
+        android:layout_above="@id/linearlayouttools"
+        android:layout_marginTop="-3dp"/> <!--</android.support.v7.widget.RecyclerView>-->
 
 
     <LinearLayout
+        android:id="@+id/linearlayouttools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
         android:background="@android:color/background_light"
         android:orientation="horizontal"
         android:padding="5dp">
@@ -34,8 +36,8 @@
             android:id="@+id/select_image"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:padding="5dp"
             android:contentDescription="@null"
+            android:padding="5dp"
             android:src="@drawable/ic_select_image_to_send" />
 
         <EditText
@@ -44,7 +46,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Write a message..."
+            android:hint="@string/write_a_message"
+            android:importantForAutofill="no"
+
             android:inputType="textMultiLine"
             android:padding="10dp" />
 
@@ -53,8 +57,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:padding="5dp"
             android:contentDescription="@null"
+            android:padding="5dp"
             app:srcCompat="@drawable/ic_send_message" />
 
     </LinearLayout>

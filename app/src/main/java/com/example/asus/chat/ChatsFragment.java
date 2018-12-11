@@ -215,5 +215,7 @@ public class ChatsFragment extends Fragment
             TextView user_status = (TextView) mView.findViewById(R.id.all_users_status);
             user_status.setText(userStatus);
         }
+
+
     }
 }

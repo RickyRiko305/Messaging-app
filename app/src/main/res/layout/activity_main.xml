@@ -15,7 +15,8 @@
         <include
             android:id="@+id/main_page_toolbar"
             layout="@layout/app_bar_layout"
-            android:layout_height="wrap_content"></include>
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"></include>
 
         <android.support.design.widget.TabLayout
             android:id="@+id/main_tabs"
