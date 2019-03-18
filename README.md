@@ -12,3 +12,5 @@ This app is build with android studio and firebase database
      5.see friends profile;
      6.friend request;
      7.chats;
+## apk like:
+   https://github.com/RickyRiko305/messaging-app-project
